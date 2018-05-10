@@ -1,0 +1,44 @@
+{
+  "name": "TweetDelete",
+  "version": "0.0.1",
+  "author": "Ryan Gomba",
+  "description": "Bulk delete tweets",
+  "repository": "https://github.com/ryangomba/TweetDelete",
+  "main": "js/app.js",
+  "dependencies": {
+    "body-parser": "1.9.0",
+    "cookie-parser": "1.3.3",
+    "express": "4.9.8",
+    "express-session": "1.9.0",
+    "fibers": "~1.0.1",
+    "flux": "^2.0.0",
+    "node-jsx": "~0.9.0",
+    "oauth": "0.9.12",
+    "passport": "0.2.1",
+    "passport-twitter": "1.0.2",
+    "react": "~0.11",
+    "react-async": "1.0.2",
+    "react-router-component": "~0.22.0",
+    "superagent": "^0.20.0",
+    "superagent-oauth": "^0.2.3",
+    "twitter": "^0.2.12"
+  },
+  "devDependencies": {
+    "browserify": "~4.2.2",
+    "connect-browserify": "~2.0.1",
+    "envify": "~2.0.1",
+    "reactify": "~0.14.0",
+    "uglify-js": "~2.4.15",
+    "watchify": "~0.10.2"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "NODE_ENV=production browserify . | uglifyjs -cm > js/bundle.min.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}

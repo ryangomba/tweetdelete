@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+/* VARIABLES */
+/* GLOBAL */
+body {
+  color: #444;
+  text-size: 18px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
+
+.page {
+  width: 600px;
+  margin: auto; }
+
+header {
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: solid 1px #eee; }
+  header h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    text-transform: lowercase;
+    font-weight: 100; }
+    header h1 span.delete {
+      color: #e03b3e; }
+  header h2 {
+    margin-top: 20px; }
+
+#login {
+  text-align: center; }
+  #login section {
+    padding: 40px 0; }
+    #login section .login {
+      display: inline-block;
+      width: 158px;
+      height: 28px;
+      background-image: url("/assets/images/connect.png"); }
+
+#home .tweet .radio {
+  width: 20px;
+  height: 20px;
+  background-color: #999; }
+  #home .tweet .radio.selected {
+    background-color: #e03b3e; }

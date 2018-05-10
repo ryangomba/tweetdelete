@@ -1,0 +1,71 @@
+@import 'reset';
+@import 'mixins';
+
+/* VARIABLES */
+
+$red-color: #e03b3e;
+
+/* GLOBAL */
+
+body {
+    color: #444;
+    text-size: 18px;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+}
+
+.page {
+	width: 600px;
+	margin: auto;
+}
+
+header {
+	padding: 40px 0;
+	text-align: center;
+	border-bottom: solid 1px #eee;
+
+	h1 {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 48px;
+		text-transform: lowercase;
+		font-weight: 100;
+
+		span.delete {
+			color: $red-color;
+		}
+	}
+
+	h2 {
+		margin-top: 20px;
+	}
+}
+
+#login {
+	text-align: center;
+
+	section {
+		padding: 40px 0;
+
+		.login {
+			display: inline-block;
+			width: 158px;
+			height: 28px;
+			background-image: url("/assets/images/connect.png");
+		}
+	}
+}
+
+#home {
+
+	.tweet {
+
+		.radio {
+			width: 20px;
+			height: 20px;
+			background-color: #999;
+
+			&.selected {
+				background-color: $red-color;
+			}
+		}
+	}
+}
